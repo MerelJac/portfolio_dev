@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=News+Cycle&display=swap');
+
+* {
+    color: #F7E3D4;
+    padding: 0;
+    margin: 0;
+    font-family: 'News Cycle', sans-serif;
+}
+footer {
+    background-color: #234539;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;;
+}
+
+#profPhoto {
+    width: 100px;
+}
+
+#section1 {
+    background-image: url(./images/coverPhoto.jpg);
+    height: 500px; /* You must set a specified height */
+    background-position: fixed; 
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#portfolio {
+    height: 300px;
+    background-color: #7D3415;
+}
+
+.portfolioIcon{
+    height: 200px;
+}
+
+.portfolioIcon:hover{
+    height: 225px;
+}
+
+.aboutIcon {
+    height: 200px;
+}
+
+#aboutMe {
+    background-color: #AC8574;
+}
+
+.contactIcon {
+    height: 100px
+}
+
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro {
+    float: right;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+#violinText, #trainerText, #devText {
+    display: none;
+}
+
+#violin:hover + #violinText{
+    display: block;
+}
+
+#trainer:hover + #trainerText{
+    display: block;
+}
