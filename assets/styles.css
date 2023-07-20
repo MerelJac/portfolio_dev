@@ -5,9 +5,15 @@
     padding: 0;
     margin: 0;
     font-family: 'News Cycle', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 footer {
     background-color: #234539;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 h2 {
     font-family: 'Amatic SC', cursive;;
@@ -34,8 +40,12 @@ h2 {
     height: 200px;
 }
 
-.portfolioIcon:hover{
-    height: 225px;
+#name, h2 {
+    font-size: 75px;
+}
+
+.subhead {
+    font-size: 15px;
 }
 
 .aboutIcon {
@@ -44,16 +54,19 @@ h2 {
 
 #aboutMe {
     background-color: #AC8574;
+    justify-content: space-around;
 }
 
 .contactIcon {
-    height: 100px
+    height: 75px;
+    padding-right: 40px;
 }
 
 
 .flexColumn {
     display: flex;
     flex-direction: column;
+    align-items: end;
 }
 .flexRow {
     display: flex;
@@ -63,17 +76,38 @@ h2 {
 .intro {
     float: right;
     padding-top: 100px;
-    padding-right: 100px;
+    padding-right: 150px;
 }
 
-#violinText, #trainerText, #devText {
-    display: none;
+
+.intro {
+    opacity: 0; /* Initially set the opacity to 0 to hide the element */
+    animation: fadeInAnimation 2s forwards; /* Use the fade-in animation with a duration of 1 second */
 }
 
-#violin:hover + #violinText{
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Start the animation with an opacity of 0 */
+    }
+    to {
+        opacity: 1; /* End the animation with an opacity of 1 (fully visible) */
+    }
+}
+
+
+
+.aboutIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the column width based on your image size */
+    grid-gap: 50px; /* Adjust this to set the gap between tiles */
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .carousel-cell img {
     display: block;
-}
-
-#trainer:hover + #trainerText{
-    display: block;
-}
+    height: 200px;
+  }
