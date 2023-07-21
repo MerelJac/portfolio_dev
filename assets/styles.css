@@ -164,8 +164,8 @@ h2 {
         padding-left: 50px;
     }
     #portfolio {
-        height: 447px;
-        flex-direction: row;
+        height: 100vh;
+        flex-direction: column;
     }
 
     #portfolio h2 {
@@ -199,9 +199,28 @@ h2 {
         position: relative;
         bottom: 66px;   
     }
+
+    .portfilioIcons {
+        max-width: 300px;
+        height: auto;
+        padding-top: 46px;
+    }
+    #portfolioGitHub {
+        position: absolute;
+        bottom: 53px;
+        right: 63px;
+    }
+
     .intro {
-        position: relative;
-        bottom: -8px;
+
+    position: absolute;
+    bottom: 393px;
+    right: -57px;
+
+    }
+    .centered {
+        display: flex;
+        justify-content: center;
     }
   }
 
@@ -229,7 +248,10 @@ h2 {
     }
 
     .intro {
-        bottom: -35px;
+        position: absolute;
+        bottom: 393px;
+        right: -23px;
+        top: 125px;
         padding-right: 29px;
         align-items: end;
     }
@@ -264,10 +286,10 @@ h2 {
         bottom: -85px;
         align-items: start;
     }
-    #portfolioGitHub {
+    /* #portfolioGitHub {
         bottom: 124px;
         left: 290px;
-    }
+    } */
     .intro {
         align-items: end;
         line-height: 2;
