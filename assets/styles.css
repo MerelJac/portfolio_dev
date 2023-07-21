@@ -13,6 +13,8 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 h2 {
     font-family: 'Amatic SC', cursive;;
@@ -31,11 +33,10 @@ h2 {
 }
 
 #portfolio {
-    height: 400px;
     background-color: #7D3415;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 43px;
+    padding-top: 20px;
 }
 
 #name, h2 {
@@ -131,4 +132,54 @@ h2 {
 
   .flickity-enabled {
     padding-right: 30vw;
+    display: flex;
+  }
+
+  .next {
+    left: 100px;
+  }
+  @media (max-width: 768px) {
+    .flexRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio {
+        height: 550px
+    }
+
+    #portfolio h2 {
+        padding-left: 50px;
+    }
+
+    #aboutMe {
+        background-color: #AC8574;
+        justify-content: space-around;
+        padding-right: 55px;
+        padding-left: 55px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #voilinText {
+        position: absolute;
+        bottom: -90px;
+    }
+
+    #trainerText {
+        position: absolute;
+        bottom: -120px;
+    }
+
+    #devText {
+        position: absolute;
+        bottom: -150px;
+    }
+
+    #aboutText {
+        position: absolute;
+        bottom: -246px;
+    }
+
+
   }
