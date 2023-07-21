@@ -76,15 +76,10 @@ h2 {
 
 #portfolioGitHub {
     position: relative;
-    bottom: -154px;
+    bottom: -124px;
     /* bottom: -53px; */
 }
-.flickity-button {
-    width: 3vw;
-    border: transparent;
-    border-radius: 100%;
-    opacity: 70%;
-}
+
 
 
 #trainer {
