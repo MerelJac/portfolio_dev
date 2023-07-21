@@ -135,13 +135,21 @@ h2 {
     display: flex;
   }
 
-  .next {
-    left: 100px;
-  }
+
   @media (max-width: 768px) {
     .flexRow {
         display: flex;
         flex-direction: column;
+    }
+
+    .next {
+        position: absolute;
+        left: 90vw;
+    }
+
+    .previous {
+        position: absolute;
+        left: 90vw;
     }
 
     #portfolio {
@@ -152,6 +160,11 @@ h2 {
         padding-left: 50px;
     }
 
+    .previous {
+        position: absolute;
+        left: 10vw;
+    }
+    
     #aboutMe {
         background-color: #AC8574;
         justify-content: space-around;
