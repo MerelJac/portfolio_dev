@@ -7,9 +7,17 @@
     font-family: 'News Cycle', sans-serif;
     box-sizing: border-box;
 }
+#trainerText {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
 .hide {
-    display: none;
+    display: none !important;
+}
+a {
+    text-decoration: none;
 }
 footer {
     background-color: #234539;
@@ -76,6 +84,7 @@ h2 {
     border-radius: 100%;
     opacity: 70%;
 }
+
 
 #trainer {
     position: relative;

@@ -1,26 +1,3 @@
-
-// var $carousel = $('.carousel').flickity({
-//     imagesLoaded: true,
-//     percentPosition: false,
-//   });
-  
-//   var $imgs = $carousel.find('.carousel-cell img');
-//   // get transform property
-//   var docStyle = document.documentElement.style;
-//   var transformProp = typeof docStyle.transform == 'string' ?
-//     'transform' : 'WebkitTransform';
-//   // get Flickity instance
-//   var flkty = $carousel.data('flickity');
-  
-//   $carousel.on( 'scroll.flickity', function() {
-//     flkty.slides.forEach( function( slide, i ) {
-//       var img = $imgs[i];
-//       var x = ( slide.target + flkty.x ) * -1/3;
-//       img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-//     });
-//   });
-  
-  
 let allPortfolioImg = document.getElementsByClassName("portfolioIcon");
 
 //exercise API 
@@ -43,4 +20,38 @@ document.querySelector("#apiHeader").addEventListener("mouseover", () => {
   })
   // for each image
   document.querySelector("#fitapp").classList.remove('hide');
+})
+
+let aboutMeText = document.getElementsByClassName("aboutMeText");
+//violin icon
+document.querySelector("#violin").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const textArray = Array.from(aboutMeText)
+  textArray.forEach((text) => {
+    text.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#voilinText").classList.remove('hide');
+})
+
+// entrepreneur fitenss Icon
+document.querySelector("#trainer").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const textArray = Array.from(aboutMeText)
+  textArray.forEach((text) => {
+    text.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#trainerText").classList.remove('hide');
+})
+
+// dev icon
+document.querySelector("#developer").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const textArray = Array.from(aboutMeText)
+  textArray.forEach((text) => {
+    text.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#devText").classList.remove('hide');
 })
