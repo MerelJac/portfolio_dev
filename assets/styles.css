@@ -154,7 +154,7 @@ h2 {
     }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .flexRow {
         display: flex;
         flex-direction: column;
@@ -205,7 +205,7 @@ h2 {
     }
   }
 
-  @media (max-width: 450px) {
+ @media (max-width: 450px) {
     .portfolioIcon {
         max-width: 10px;
         height: auto;
@@ -219,6 +219,10 @@ h2 {
         font-size: 50px;
     }
 
+    #trainerText {
+        align-items: start;
+    }
+
 
     #section1 {
         background-position: -140px;
@@ -227,6 +231,21 @@ h2 {
     .intro {
         bottom: -35px;
         padding-right: 29px;
+        align-items: end;
+    }
+
+    .padding {
+        padding-left: 60px;
+    }
+
+    .centered {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutIcons {
+        bottom: -67px;
+        right: 14px;    
     }
 
     #aboutMe {
@@ -245,5 +264,16 @@ h2 {
         bottom: -85px;
         align-items: start;
     }
-
+    #portfolioGitHub {
+        bottom: 124px;
+        left: 290px;
+    }
+    .intro {
+        align-items: end;
+        line-height: 2;
+        padding-right: 48px;
+    }
+    #portfolio {
+        flex-direction: column;
+    }
   }
