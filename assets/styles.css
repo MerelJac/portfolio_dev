@@ -217,7 +217,7 @@ h2 {
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .portfolioIcon {
         max-width: 10px;
         height: auto;
