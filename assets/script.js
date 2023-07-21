@@ -1,5 +1,4 @@
 
-
 var $carousel = $('.carousel').flickity({
     imagesLoaded: true,
     percentPosition: false,
@@ -20,4 +19,5 @@ var $carousel = $('.carousel').flickity({
       img.style[ transformProp ] = 'translateX(' + x  + 'px)';
     });
   });
+  
   

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <title>MerelJac</title>
 </head>
+
 <body>
     <section id="section1">
         <header></header>
@@ -18,23 +20,22 @@
     </section>
     <section id="portfolio" class="flexRow">
         <h2>Portfolio</h2>
-        <ul class="gallery js-flickity"
-        data-flickity-options='{ "wrapAround": true }'>
+        <!-- <ul> -->
             <div class="carousel">
                 <div class="carousel-cell">
-                <img class="portfolioIcon" src="./assets/images/api.png">
+                    <img class="portfolioIcon" src="./assets/images/api.png">
                 </div>
                 <div class="carousel-cell">
-                <img class="portfolioIcon" src="./assets/images/fitapp.png">
+                    <img class="portfolioIcon" src="./assets/images/fitapp.png">
                 </div>
-            </div>         
-        </ul>
+            </div>
+        <!-- </ul> -->
     </section>
     <section id="aboutMe" class="flexRow">
         <ul class="aboutIcons">
             <img id="violin" class="aboutIcon" alt="violinist" src="./assets/images/violin.png">
             <img id="trainer" class="aboutIcon" alt="trainer" src="./assets/images/trainer.png">
-            <img id="developer" class="aboutIcon" alt="developer" src="./assets/images/dev.png">
+            <img id="developer" class="aboutIcon" alt="developer" src="./assets/images/dev2.png">
         </ul>
         <div class="flexColumn">
             <h2>About Me</h2>
@@ -46,15 +47,20 @@
     <footer>
         <h2 id="contact">Contact</h2>
         <ul>
-            <a href="https://www.linkedin.com/in/merel-jacobs-3bb993149/"><img class="contactIcon" alt="linkedin" src="./assets/images/linkedin.png"></a>
-            <a href="mailto:merel.burleigh@gmail.com"><img class="contactIcon" alt="email" src="./assets/images/email.png"></a>
-            <a href="https://github.com/MerelJac"><img class="contactIcon" alt="github" src="./assets/images/github.png"></a>
+            <a href="https://www.linkedin.com/in/merel-jacobs-3bb993149/"><img class="contactIcon" alt="linkedin"
+                    src="./assets/images/linkedin.png"></a>
+            <a href="mailto:merel.burleigh@gmail.com"><img class="contactIcon" alt="email"
+                    src="./assets/images/email.png"></a>
+            <a href="https://github.com/MerelJac"><img class="contactIcon" alt="github"
+                    src="./assets/images/github.png"></a>
         </ul>
     </footer>
     <!-- scripts for carousel -->
+    <!-- https://codepen.io/desandro/pen/jrGWRQ -->
     <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
