@@ -7,6 +7,10 @@
     font-family: 'News Cycle', sans-serif;
     box-sizing: border-box;
 }
+
+.hide {
+    display: none;
+}
 footer {
     background-color: #234539;
     display: flex;
@@ -37,6 +41,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #name, h2 {
@@ -54,6 +59,16 @@ h2 {
 
 .flickity-page-dots {
     display: none;
+}
+
+.letterspacing {
+    letter-spacing: 5px;
+    line-height: 2;
+}
+
+#portfolioGitHub {
+    position: absolute;
+    bottom: -377px;
 }
 .flickity-button {
     width: 3vw;
