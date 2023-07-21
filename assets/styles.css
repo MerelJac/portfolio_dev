@@ -12,7 +12,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;    
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -61,6 +61,11 @@ h2 {
     border-radius: 100%;
     opacity: 70%;
 }
+
+#trainer {
+    position: relative;
+    bottom: 92px;
+}
 .aboutIcon {
     height: 200px;
 }
@@ -68,6 +73,8 @@ h2 {
 #aboutMe {
     background-color: #AC8574;
     justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contactIcon {
@@ -107,6 +114,16 @@ h2 {
     }
 }
 
+.next {
+    position: absolute;
+    left: 90vw;
+}
+
+.previous {
+    position: absolute;
+    left: 90vw;
+}
+
 .flickity-slider {
     transform: translateX(10px);
     height: 50vh;
@@ -118,6 +135,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 100px); /* Adjust the column width based on your image size */
     grid-gap: 50px; /* Adjust this to set the gap between tiles */
+    position: relative;
+    bottom: -47px;
 }
 
 .carousel-cell {
@@ -134,7 +153,10 @@ h2 {
     padding-right: 30vw;
     display: flex;
   }
-
+.portfolioIcon {
+    max-width: 400px;
+    height: auto;
+}
 
   @media (max-width: 768px) {
     .flexRow {
@@ -174,25 +196,66 @@ h2 {
         padding-bottom: 20px;
     }
 
-    #voilinText {
-        position: absolute;
-        bottom: -90px;
+    #developer {
+        position: relative;
+        right: 146px;
+        bottom: -91px;
     }
 
-    #trainerText {
-        position: absolute;
-        bottom: -120px;
+    .aboutIcons {
+        bottom: -84px;
     }
 
-    #devText {
-        position: absolute;
-        bottom: -150px;
+ 
+    .flexColumn {
+        position: relative;
+        bottom: 66px;   
+    }
+    .intro {
+        position: relative;
+        bottom: -8px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .portfolioIcon {
+        max-width: 10px;
+        height: auto;
     }
 
-    #aboutText {
-        position: absolute;
-        bottom: -246px;
+    * {
+        margin: -6px;
     }
 
+    h2, #contact, #name {
+        font-size: 50px;
+    }
+
+
+    #section1 {
+        background-position: -140px;
+    }
+
+    .intro {
+        bottom: -35px;
+        padding-right: 29px;
+    }
+
+    #aboutMe {
+        padding-top: 60px;
+        padding-bottom: 150px
+    }
+
+    .contactIcon {
+        height: 50px;
+    }
+    .lastIcon {
+        padding-right: 0;
+    }
+
+    .flexColumn {
+        bottom: -85px;
+        align-items: start;
+    }
 
   }
