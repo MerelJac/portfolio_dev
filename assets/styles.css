@@ -28,6 +28,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
 h2 {
     font-family: 'Amatic SC', cursive;;
 }
@@ -38,17 +40,23 @@ h2 {
 
 #section1 {
     background-image: url(./images/coverPhoto.jpg);
-    height: 500px; /* You must set a specified height */
+    height: 100vh;
     background-position: fixed; 
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+#aboutTextSection {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
 #portfolio {
     background-color: #7D3415;
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    height: 100vh;
     padding-bottom: 20px;
 }
 
@@ -56,10 +64,6 @@ h2 {
     font-size: 75px;
 }
 
-.portfolioIcon {
-    min-width: 200px;
-    height: auto;
-}
 
 .subhead {
     font-size: 15px;
@@ -75,7 +79,7 @@ h2 {
 }
 
 #portfolioGitHub {
-    position: relative;
+    position: absolute;
     bottom: -124px;
     /* bottom: -53px; */
 }
@@ -92,9 +96,7 @@ h2 {
 
 #aboutMe {
     background-color: #AC8574;
-    justify-content: space-around;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    height: 60vh;
 }
 
 .contactIcon {
@@ -174,15 +176,6 @@ h2 {
 
 
     
-    #aboutMe {
-        background-color: #AC8574;
-        justify-content: space-around;
-        padding-right: 55px;
-        padding-left: 55px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: 459px;
-    }
 
     #developer {
         position: relative;
@@ -205,11 +198,10 @@ h2 {
         height: auto;
         padding-top: 46px;
     }
-    #portfolioGitHub {
-        position: absolute;
-        bottom: 53px;
+    /* #portfolioGitHub {
+        bottom: 154px;
         right: 63px;
-    }
+    } */
 
     .intro {
 
@@ -226,7 +218,7 @@ h2 {
 
  @media (max-width: 450px) {
     .portfolioIcon {
-        max-width: 10px;
+        max-width: 400px;
         height: auto;
     }
 
@@ -239,21 +231,22 @@ h2 {
     }
 
     #trainerText {
-        align-items: start;
+        align-items: end;
     }
 
 
     #section1 {
-        background-position: -140px;
+        background-position: -340px;
     }
 
     .intro {
         position: absolute;
         bottom: 393px;
+        top: 359px;
         right: -23px;
-        top: 125px;
         padding-right: 29px;
         align-items: end;
+        margin-left: -126px;
     }
 
     .padding {
@@ -266,14 +259,10 @@ h2 {
     }
 
     .aboutIcons {
-        bottom: -67px;
-        right: 14px;    
+        bottom: -170px;
+        right: -48px;
     }
 
-    #aboutMe {
-        padding-top: 60px;
-        padding-bottom: 150px
-    }
 
     .contactIcon {
         height: 50px;
@@ -281,15 +270,19 @@ h2 {
     .lastIcon {
         padding-right: 0;
     }
-
-    .flexColumn {
-        bottom: -85px;
-        align-items: start;
+    #violin {
+        position: absolute;
+        right: 128px;
+        top: -4px;
+        z-index: 10;
     }
-    /* #portfolioGitHub {
-        bottom: 124px;
-        left: 290px;
-    } */
+    .flexColumn {
+        bottom: 188px;
+        align-items: start;
+        left: 233px;
+        position: absolute;
+    }
+
     .intro {
         align-items: end;
         line-height: 2;
@@ -297,5 +290,23 @@ h2 {
     }
     #portfolio {
         flex-direction: column;
+        height: 80vh;
     }
+
+    #portfolioGitHub {
+        bottom: -90px;
+        right: 32px;
+    }
+
+    #aboutTextSection {
+        position: relative;
+        top: -130px;
+        right: 75px;
+    }
+
+
   }
+
+  /* @media (min-width: 451px) {
+    
+  } */
