@@ -330,25 +330,3 @@ h2 {
     }
   }
 
-
-@media (max-width: 3000px) {
-    .intro {
-        padding-top: 443px;
-        padding-right: 200px;
-    }
-
-    .portfolioIcon {
-        margin-top: 109px;
-
-}
-
-    #aboutTextSection {
-
-        position: relative;
-        left: 465px;
-        bottom: -64px;
-
-    }
-
-
-}
