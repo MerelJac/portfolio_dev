@@ -281,9 +281,12 @@ h2, #contact, #name {
         font-size: 20px;
     }
 
-    #aboutTextSection {
-        right: 115px;
+    #section1 {
+        background-position: -9px;
     }
+    #aboutTextSection {
+        right: 175px;
+        }
 
     #h2Port, #aboutText, #contact {
         font-size: 60px;
@@ -294,7 +297,7 @@ h2, #contact, #name {
     }
 
     .aboutIcons {
-        right: -106px;
+        right: -208px;
 
     }
 
