@@ -8,7 +8,7 @@
 #trainerText {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
 }
 
 #footerIcons {
@@ -144,9 +144,6 @@ h2, #contact, #name {
     font-size: 50px;
 }
 
-#trainerText {
-    align-items: end;
-}
 
 
 
