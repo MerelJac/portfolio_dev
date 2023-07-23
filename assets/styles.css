@@ -222,3 +222,54 @@ h2, #contact, #name {
 #aboutText {
     margin: 0px;
 }
+
+@media (min-width: 650px) {
+    #section1 {
+        background-position: -250px;
+    }
+
+    .intro {
+        padding-right: 109px;
+    }
+
+    #portfolio {
+        flex-direction: row;
+    }
+
+    #portfolioGitHub {
+        top: 169vh;
+        right: 539px;
+    }
+
+
+    .aboutIcons {
+        bottom: -210px;
+    }
+    .portfolioIcon {
+        position: relative;
+        top: 139px;
+    }
+
+    #aboutTextSection {
+        top: 184vh;
+        right: 55px;
+    }
+    #developer {
+        top: -102px;
+        right: 22px;
+    }
+
+    .aboutIcon {
+        height: 272px;
+    }
+
+    #violin {
+        right: 185px;
+        top: 19px;
+    }
+
+    #trainer {
+        bottom: 226px;
+        right: 57px;
+    }
+}
