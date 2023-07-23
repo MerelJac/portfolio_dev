@@ -2,8 +2,6 @@
 
 * {
     color: #F7E3D4;
-    padding: 0;
-    margin: 0;
     font-family: 'News Cycle', sans-serif;
     box-sizing: border-box;
 }
@@ -13,6 +11,12 @@
     align-items: end;
 }
 
+#footerIcons {
+    display: flex;
+}
+#h2Port {
+    padding-left: 60px
+}
 .hide {
     display: none !important;
 }
@@ -24,9 +28,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: baseline;    
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: center;    
 }
 
 
@@ -41,16 +43,11 @@ h2 {
 #section1 {
     background-image: url(./images/coverPhoto.jpg);
     height: 100vh;
-    background-position: fixed; 
+    background-position: -340px;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-#aboutTextSection {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-}
 #portfolio {
     background-color: #7D3415;
     display: flex;
@@ -69,31 +66,25 @@ h2 {
     font-size: 15px;
 }
 
-.flickity-page-dots {
-    display: none;
-}
-
 .letterspacing {
     letter-spacing: 5px;
-    line-height: 2;
-}
 
-#portfolioGitHub {
-    position: absolute;
-    bottom: -124px;
-    /* bottom: -53px; */
 }
 
 
 
 #trainer {
     position: relative;
-    bottom: 92px;
+    bottom: 135px;
+    right: 48px;
 }
 .aboutIcon {
     height: 200px;
 }
 
+.aboutMeText {
+    margin: 0px
+}
 #aboutMe {
     background-color: #AC8574;
     height: 60vh;
@@ -116,15 +107,15 @@ h2 {
 }
 
 .intro {
-    float: right;
-    padding-top: 100px;
-    padding-right: 150px;
-}
-
-
-.intro {
     opacity: 0; /* Initially set the opacity to 0 to hide the element */
     animation: fadeInAnimation 2s forwards; /* Use the fade-in animation with a duration of 1 second */
+    position: absolute;
+    bottom: 393px;
+    top: 359px;
+    right: -23px;
+    padding-right: 29px;
+    align-items: end;
+    margin-left: -126px;
 }
 
 @keyframes fadeInAnimation {
@@ -137,196 +128,97 @@ h2 {
 }
 
 
-.aboutIcons {
-    display: grid;
-    grid-template-columns: repeat(3, 100px); /* Adjust the column width based on your image size */
-    grid-gap: 50px; /* Adjust this to set the gap between tiles */
-    position: relative;
-    bottom: -47px;
-}
-
 .portfolioIcon {
     max-width: 400px;
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .flexRow {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .padding {
-        padding-left: 50px;
-    }
-    #portfolio {
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    #portfolio h2 {
-        padding-left: 50px;
-    }
-
-
-    #aboutTextSection {
-        position: relative;
-        top: -87px;
-        right: 50px;
-    }
-
-    #developer {
-        position: relative;
-        right: 103px;
-        bottom: -112px;
-    }
-
-    #trainer {
-        bottom: 114px;
-        right: -46px;
-    }
-
-    .aboutIcons {
-        bottom: -133px;
-    }
-
-    .aboutIcon {
-        height: 250px;
-    }
-
- 
-    .flexColumn {
-        position: relative;
-        bottom: 66px;   
-    }
-
-    .portfilioIcons {
-        max-width: 300px;
-        height: auto;
-        padding-top: 46px;
-    }
-
-    .intro {
-
+#developer {
     position: absolute;
-    bottom: 242px;
-    right: -106px;
+    top: -37px;
+    right: 137px;
+}
 
-    }
-    .centered {
-        display: flex;
-        justify-content: center;
-    }
-    .portfolioIcon {
-        max-width: 500px;
-    }
-    #portfolioGitHub {
-        bottom: -111px;
-        right: 30px;
-    }
+h2, #contact, #name {
+    font-size: 50px;
+}
 
-    #section1 {
-        background-position: -218px;
-    }
-  }
-
- @media (max-width: 450px) {
-    .portfolioIcon {
-        max-width: 400px;
-        height: auto;
-    }
-
-    #trainer {
-        bottom: 118px;
-        right: 6px;
-    }
-    #developer {
-        right: 157px;
-    }
-    * {
-        margin: -6px;
-    }
-
-    h2, #contact, #name {
-        font-size: 50px;
-    }
-
-    #trainerText {
-        align-items: end;
-    }
+#trainerText {
+    align-items: end;
+}
 
 
-    #section1 {
-        background-position: -340px;
-    }
-
-    .intro {
-        position: absolute;
-        bottom: 393px;
-        top: 359px;
-        right: -23px;
-        padding-right: 29px;
-        align-items: end;
-        margin-left: -126px;
-    }
-
-    .padding {
-        padding-left: 60px;
-    }
-
-    .centered {
-        display: flex;
-        justify-content: center;
-    }
-
-    .aboutIcons {
-        bottom: -170px;
-        right: -48px;
-    }
 
 
-    .contactIcon {
-        height: 50px;
-    }
-    .lastIcon {
-        padding-right: 0;
-    }
-    #violin {
-        position: absolute;
-        right: 128px;
-        top: -4px;
-        z-index: 10;
-    }
-    .flexColumn {
-        bottom: 188px;
-        align-items: start;
-        left: 233px;
-        position: absolute;
-    }
+.intro {
+    top: 484px;
+    right: -23px;
+    margin-left: -126px;
+}
 
-    .intro {
-        align-items: end;
-        line-height: 2;
-        padding-right: 48px;
-    }
-    #portfolio {
-        flex-direction: column;
-        height: 80vh;
-    }
+.padding {
+    padding-left: 60px;
+}
 
-    #portfolioGitHub {
-        bottom: -90px;
-        right: 32px;
-    }
+.centered {
+    display: flex;
+    justify-content: center;
+}
 
-    #aboutTextSection {
-        position: relative;
-        top: -130px;
-        right: 75px;
-    }
+.aboutIcons {
+    bottom: -219px;
+    right: -48px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the column width based on your image size */
+    grid-gap: 50px; /* Adjust this to set the gap between tiles */
+    position: relative;
+}
 
-    footer {
-        align-items: baseline;
-    }
-  }
+.contactIcon {
+    height: 50px;
+}
+.lastIcon {
+    padding-right: 0;
+}
+#violin {
+    position: absolute;
+    right: 248px;
+    top: 60px;
+    z-index: 10;
+}
+.flexColumn {
+    bottom: 188px;
+    align-items: start;
+    left: 233px;
+    position: absolute;
+}
 
+.intro {
+    align-items: end;
+    line-height: 0;
+    padding-right: 48px;
+}
+#portfolio {
+    flex-direction: column;
+    height: 80vh;
+}
+
+#portfolioGitHub {
+    position: absolute;
+    bottom: -113px;
+    right: 32px;
+}
+
+#aboutTextSection {
+    position: absolute;
+    top: 184vh;
+    right: 43px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#aboutText {
+    margin: 0px;
+}
