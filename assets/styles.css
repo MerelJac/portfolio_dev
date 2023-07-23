@@ -241,7 +241,6 @@ h2, #contact, #name {
         right: 539px;
     }
 
-
     .aboutIcons {
         bottom: -210px;
     }
@@ -271,5 +270,35 @@ h2, #contact, #name {
     #trainer {
         bottom: 226px;
         right: 57px;
+    }
+}
+
+@media (min-width: 768px) {
+    #name {
+        font-size: 110px;
+    }
+    .subhead {
+        font-size: 20px;
+    }
+
+    #aboutTextSection {
+        right: 115px;
+    }
+
+    #h2Port, #aboutText, #contact {
+        font-size: 60px;
+    }
+
+    .letterspacing {
+        font-size: 20px;
+    }
+
+    .aboutIcons {
+        right: -106px;
+
+    }
+
+    #developer {
+        right: -34px;
     }
 }
