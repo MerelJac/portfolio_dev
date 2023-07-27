@@ -32,6 +32,36 @@ document.querySelector("#phrHeader").addEventListener("mouseover", () => {
   // for each image
   document.querySelector("#phr").classList.remove('hide');
 })
+//database
+document.querySelector("#database").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#databaseImg").classList.remove('hide');
+})
+//cloudinary
+document.querySelector("#cloudinary").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#cloudinaryImg").classList.remove('hide');
+})
+//noteTaker
+document.querySelector("#noteTaker").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#noteTakerImg").classList.remove('hide');
+})
 let aboutMeText = document.getElementsByClassName("aboutMeText");
 //violin icon
 document.querySelector("#violin").addEventListener("mouseover", () => {
