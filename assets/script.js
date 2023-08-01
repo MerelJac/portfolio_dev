@@ -62,6 +62,19 @@ document.querySelector("#noteTaker").addEventListener("mouseover", () => {
   // for each image
   document.querySelector("#noteTakerImg").classList.remove('hide');
 })
+//passwordHase
+document.querySelector("#passwordHash").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#passwordHashImg").classList.remove('hide');
+})
+
+
+
 let aboutMeText = document.getElementsByClassName("aboutMeText");
 //violin icon
 document.querySelector("#violin").addEventListener("mouseover", () => {
