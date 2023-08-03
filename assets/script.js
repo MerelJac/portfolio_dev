@@ -73,6 +73,18 @@ document.querySelector("#passwordHash").addEventListener("mouseover", () => {
   document.querySelector("#passwordHashImg").classList.remove('hide');
 })
 
+//eCommerce
+document.querySelector("#ecommerceBackend").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#eCommerceImg").classList.remove('hide');
+})
+
+
 
 
 let aboutMeText = document.getElementsByClassName("aboutMeText");
