@@ -11,6 +11,16 @@ document.querySelector("#fitAppHeader").addEventListener("mouseover", () => {
   document.querySelector("#api").classList.remove('hide');
 })
 
+//somethingBorrowed
+document.querySelector("#somethingBorrowed").addEventListener("mouseover", () => {
+  //reusable for loop 
+  const imgArray = Array.from(allPortfolioImg)
+  imgArray.forEach((img) => {
+    img.classList.add('hide');
+  })
+  // for each image
+  document.querySelector("#somethingBorrowedImg").classList.remove('hide');
+})
 //fitness App
 document.querySelector("#apiHeader").addEventListener("mouseover", () => {
   //reusable for loop 
